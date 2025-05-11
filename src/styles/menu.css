@@ -6,6 +6,16 @@
     min-height: 100vh;
 }
 
+#mapaBox{
+    width: 1000px;
+    height: 500px;
+}
+
+#mapaBox iframe{
+    width: 100%;
+    height: 100%;
+}
+
 #dishes {
     width: 100%;
     display: flex;
