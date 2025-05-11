@@ -6,6 +6,17 @@
     min-height: 100vh;
 }
 
+
+.tabela-horarios{
+    border: solid red 1px;
+    width: 100%;
+    padding: 2rem;
+}
+
+.tabela-horarios li{
+    margin: 1rem;
+}
+
 #mapaBox{
     width: 1000px;
     height: 500px;
