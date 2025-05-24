@@ -90,4 +90,172 @@ section {
     font-size: 2.5rem;
 }
 
+/* Estilização da section horarios */
+#horarios {
+    padding: 40px 0;
+    border-radius: 16px;
+    margin: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--color-primary-6);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.section-subtitle-horario {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 32px;
+}
+
+#dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.dish {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px 20px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.dish:hover {
+    transform: translateY(-16px) scale(1.13);
+    box-shadow: 0 8px 32px rgba(180,138,214,0.25);
+    z-index: 2;
+}
+
+.dish-heart {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.dish-title {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.tabela-horarios ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tabela-horarios li {
+    font-size: 1.08rem;
+    color: var(--color-neutral-1);
+    margin-bottom: 0;
+    padding: 10px 0 10px 4px;
+    border-bottom: 1px dashed var(--color-primary-6);
+    letter-spacing: 0.2px;
+    background: none;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.tabela-horarios li:last-child {
+    border-bottom: none;
+}
+
+.about-school-section {
+    padding: 0 0 32px 0;
+    max-width: 900px;
+    margin: 0 auto 32px auto;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-school-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-school-img {
+    width: 260px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px #ffbfca22;
+    background: var(--color-primary-1);
+    flex-shrink: 0;
+    max-width: 100%;
+}
+
+.about-school-text {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.about-school-title {
+    color: var(--color-neutral-1);
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.about-school-text p {
+    color: var(--color-neutral-1);
+    font-size: 1.13rem;
+    margin-bottom: 14px;
+    line-height: 1.7;
+    text-align: center;
+    background: none;
+    box-shadow: none;
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 900px) {
+    .about-school-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .about-school-img {
+        width: 90vw;
+        max-width: 340px;
+        height: 200px;
+    }
+    .about-school-text {
+        padding: 0 4vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-school-img {
+        width: 100vw;
+        max-width: 98vw;
+        height: 140px;
+    }
+    .about-school-title {
+        font-size: 1.2rem;
+    }
+    .about-school-text p {
+        font-size: 0.98rem;
+    }
+    .about-school-section {
+        padding: 0 0 18px 0;
+    }
+}
+
 

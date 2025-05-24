@@ -8,7 +8,6 @@
 
 
 .tabela-horarios{
-    border: solid red 1px;
     width: 100%;
     padding: 2rem;
 }
@@ -17,14 +16,53 @@
     margin: 1rem;
 }
 
-#mapaBox{
-    width: 1000px;
-    height: 500px;
+#Localizacao {
+    border-radius: 18px;
+    padding: 32px 24px 24px 24px;
+    max-width: 540px;
+    margin: 48px auto;
+    text-align: center;
 }
-
-#mapaBox iframe{
+#Localizacao .section-subtitle-horario {
+    color: var(--color-primary-6);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#Localizacao address {
+    color: var(--color-neutral-1);
+    font-size: 1.08rem;
+    margin-bottom: 10px;
+    font-style: normal;
+}
+#Localizacao .btn-maps {
+    display: inline-block;
+    margin-bottom: 18px;
+    background: var(--color-primary-6);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+#Localizacao .btn-maps:hover {
+    background: var(--color-primary-3);
+}
+#mapaBox {
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    border-radius: 14px;
+    overflow: hidden;
+}
+#mapaBox iframe {
+    width: 100%;
+    height: 220px;
+    border: none;
+    display: block;
 }
 
 #dishes {
@@ -98,4 +136,4 @@
     #horarios .section-subtitle {
         text-align: center;
     }
-} 
+}

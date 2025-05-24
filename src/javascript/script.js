@@ -56,5 +56,33 @@ $(document).ready(function() {
         origin: 'right',
         duration: 1000,
         distance: '20%'
-    })
+    });
+
+    // Animação para apresentação da escola
+    ScrollReveal().reveal('.about-school-section', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    // Animação para o título de horários
+    ScrollReveal().reveal('.section-subtitle-horario', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    // Animação para os cards de horários
+    ScrollReveal().reveal('#dishes', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
+
+    // Animação para a localização
+    ScrollReveal().reveal('#Localizacao', {
+        origin: 'left',
+        duration: 2000,
+        distance: '20%'
+    });
 });
